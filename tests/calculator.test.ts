@@ -12,7 +12,9 @@ describe('Math utilities', () => {
 
   test('should divide a by b', () => {
     expect(divide(10, 2)).toBe(5);
-    // expect(addTotal(1, 2, 3)).toBe(6);
+  });
+  test('should throw an error, can not divide by 0', () => {
+    expect(divide(5, 0)).toThrow('Can not divide by 0');
   });
 
   test('should add all number', () => {
