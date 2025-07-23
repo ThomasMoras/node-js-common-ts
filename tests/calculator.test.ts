@@ -14,7 +14,7 @@ describe('Math utilities', () => {
     expect(divide(10, 2)).toBe(5);
   });
   test('should throw an error, can not divide by 0', () => {
-    expect(divide(5, 0)).toThrow('Can not divide by 0');
+    expect(() => divide(5, 0)).toThrow('Can not divide by 0');
   });
 
   test('should add all number', () => {

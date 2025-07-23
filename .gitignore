@@ -14,6 +14,8 @@ pids
 # Dependency directories
 node_modules/
 dist/
+out/
+build/
 .cache/
 
 # TypeScript
@@ -22,6 +24,7 @@ dist/
 # Testing
 coverage/
 .nyc_output/
+*.lcov
 
 # Documentation
 docs/
