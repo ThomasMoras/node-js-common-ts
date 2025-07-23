@@ -22,6 +22,11 @@ export function multiply(a: number, b: number): number {
   return a * b;
 }
 
+export function divide(a: number, b: number): number {
+  if (b !== 0) return a / b;
+  else throw new Error('Can not divide by 0');
+}
+
 export function addTotal(...nums: number[]): number {
   let result = 0;
   nums.forEach(n => {
