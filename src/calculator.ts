@@ -17,6 +17,15 @@ export function sum(a: number, b: number): number {
  * @returns The produit of a and b.
  * @example
  * multiply(2, 3) // Returns 6
- */ export function multiply(a: number, b: number): number {
+ */
+export function multiply(a: number, b: number): number {
   return a * b;
+}
+
+export function addTotal(...nums: number[]): number {
+  let result = 0;
+  nums.forEach(n => {
+    result += n;
+  });
+  return result;
 }
